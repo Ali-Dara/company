@@ -1,0 +1,267 @@
+@font-face {
+    font-family: iran-sans;
+    src: url(../fonts/IRANSansWeb200.woff)format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: iran-sans;
+    src: url(../fonts/IRANSansWeb200.woff)format('woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: iran-sans;
+    src: url(../fonts/IRANSansWeb300.woff)format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: iran-sans;
+    src: url(../fonts/IRANSansWeb400.woff)format('woff');
+    font-weight: 400;
+}
+@font-face {
+    font-family: iran-sans;
+    src: url(../fonts/IRANSansWeb500.woff)format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: iran-sans;
+    src: url(../fonts/IRANSansWeb600.woff)format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: iran-sans;
+    src: url(../fonts/IRANSansWeb900.woff)format('woff');
+    font-weight: 900;
+}
+@font-face {
+    font-family: yekan;
+    src: url(../fonts/yekanf.woff);
+}
+body{
+    direction: rtl;
+    font-family: iran-sans ;
+}
+
+a{
+    text-decoration: none;
+}
+
+#navbar{
+    position: fixed;
+    padding: 20px 40px;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    transition: 0.5s;
+}
+
+#logo a{
+    color: white;
+}
+
+#toggler{
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#nav{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 240px;
+    right: -240px;
+    top: 0;
+    bottom: 0;
+    line-height: 2.5em;
+    padding-top: 30px;
+    transition-duration: 0.4s;
+}
+
+#nav a{
+    color: white;
+    font-weight: 500;
+    padding:0 20px
+}
+
+#nav a:hover{
+    color:#bdf;
+}
+
+#top-carousel .carousel-item{
+    height: 100vh;
+    min-height: 580px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#top-carousel .carousel-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 100px;
+}
+
+#top-carousel li{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#top-carousel .carousel-content{
+    color: white;
+    max-width: 900px;
+    padding: 0 70px;
+    margin: 15% auto;
+}
+
+#top-carousel .carousel-title{
+    margin-bottom: 50px;
+    font-size: 26px;
+} 
+
+#top-carousel .carousel-text{
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+#top-carousel .carousel-btn{
+    border-radius: 40px;
+    padding: 10px 40px;
+}
+
+#about{
+    background: url("../images/about/world.jpg")center/cover no-repeat fixed;
+    padding: 60px 0;
+    position: relative;
+}
+
+.section-header h3{
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+.section-header p{
+    text-align: center;
+    padding-bottom: 30px;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+#about::before{
+    position: absolute;
+    content: "";
+    background-color: rgba(255, 255, 255, 0.781);
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#about .cart-text{
+    color: #444;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.container{
+    position: relative;
+}
+
+#services{
+    padding: 60px 0;
+}
+
+#services h4{
+    margin-right: 55px;
+    margin-bottom: 15px;
+    font-weight:bold;
+}
+
+#services .description{
+    margin: 0 55px 40px 20px;
+    color: #555;
+    font-size: 14px;
+    text-align: justify;
+}
+
+#stats{
+    background: url("../images/other/stats.jpg")center/cover no-repeat fixed;
+    padding: 60px 0 10px 0;
+    color: white;
+}
+
+#stats span{
+    font-size: 56px;
+    font-weight: 600;
+    color: greenyellow;
+    font-family: yekan;
+}
+
+#stats h5{
+    font-size: 20;
+    font-family: yekan;
+    margin-bottom: 60px;
+}
+
+#skiils{
+    padding: 60px 0;
+}
+
+#skills .progress{
+    height: 35px;
+    margin-bottom: 10px;
+}
+
+#skills .progress-bar{
+    transition-duration: 1.5s;
+    width: 0;
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+@media (min-width:768px) {
+    #top-carousel .carousel-title{
+        font-size: 36px;
+    } 
+}
+
+@media (min-width:992px){
+    #toggler{
+        display: none;
+    }
+
+    #nav{
+        position: static;
+        width: auto;
+        background-color: transparent;
+        padding-top: 0;
+    }
+
+    #nav li{
+        float: right;
+    }
+
+    #navbar{
+        display: flex;
+    }
+
+    #logo{
+        order: 1;
+        margin-right: auto;
+    }
+
+    #logo h4{
+        margin-top: 4px;
+        margin-bottom: 0;
+    }
+}
